@@ -12,7 +12,7 @@
     "digitaledgeit-view": "^0.1.10"
   },
   "devDependencies": {
-    "@nib-styles/select": "^0.1.0"
+    "@nib-styles/select": "^0.1.2"
   },
   "browser": {
     "menu": "@nib/menu",
