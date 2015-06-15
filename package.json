@@ -1,0 +1,29 @@
+{
+  "name": "@nib/select",
+  "version": "0.1.0",
+  "keywords": [
+    "browser",
+    "select"
+  ],
+  "description": "A <select> written in pure HTML/JS so it can be styled nicely - unlike native ones.",
+  "main": "index.js",
+  "dependencies": {
+    "@nib/menu": "^1.0.1",
+    "digitaledgeit-view": "^0.1.10"
+  },
+  "devDependencies": {
+    "@nib-styles/select": "^0.1.0"
+  },
+  "browser": {
+    "menu": "@nib/menu",
+    "view": "digitaledgeit-view"
+  },
+  "scripts": {
+    "build": "browserify -r ./index.js:select -o build/build.js",
+    "test": "mochify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-health-funds/select.git"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../node_modules/@nib-styles/select/index.css"/>
+
+</head>
+<body>
+
+    <div>
+        <h4>Custom menu</h4>
+        <div style="padding: 1em; color: #fff; background-color: #333;">
+            What's the best language in the whole wide world?
+            <div class="selectbox js-select">
+                <div class="selectbox__selected js-select-input" tabindex="0"></div>
+                <div class="selectbox__menu js-select-menu">
+                    <div class="selectbox__option" data-value="c#">C#</div>
+                    <div class="selectbox__option" data-value="go">Go</div>
+                    <div class="selectbox__option" data-value="js">JavaScript</div>
+                    <div class="selectbox__option" data-value="php">PHP</div>
+                    <div class="selectbox__option" data-value="ruby">Ruby</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div>
+        <h4>Native select</h4>
+        <select>
+            <option value="c#">C#</option>
+            <optiondiv value="go">Go</optiondiv>
+            <option value="js">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="ruby">Ruby</option>
+        </select>
+    </div>
+
+<script src="../build/build.js"></script>
+<script>
+
+    var Select = require('select');
+    var select = new Select({el: document.querySelector('.js-select')});
+
+
+
+</script>
+
+</body>
+</html>
