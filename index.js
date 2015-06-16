@@ -78,8 +78,13 @@ module.exports = View.extend({
   },
 
   onInputMouseDown: function() {
-    console.log('mousedown')
-    this.open();
+
+    //open the menu if it isn't already closing
+    var self = this;
+    setTimeout(function() {
+      if (!self.closing) self.open();
+    }, 0);
+
   },
 
   onInputKeyDown: function(event) {
@@ -104,11 +109,22 @@ module.exports = View.extend({
   },
 
   onMenuCancel: function() {
+
+    //stop the menu from being opened
+    this.closing = true;
+
     this
       .close()
       .focus()
       .menu.focus(this.selected.value) //nothing was selected so reset the focused menu item
     ;
+
+    //the menu has finished closing
+    var self = this;
+    setTimeout(function() {
+      self.closing = false;
+    }, 0);
+
   },
 
   onMenuItemFocused: function(item, i) {
