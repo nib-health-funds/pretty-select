@@ -1,7 +1,7 @@
 {
   "name": "select",
   "dependencies": {
-    "nib-health-funds/menu": "^1.0.1",
+    "nib-health-funds/menu": "^1.0.3",
     "digitaledgeit/js-view": "^0.1.10"
   }
 }

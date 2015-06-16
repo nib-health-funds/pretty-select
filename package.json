@@ -1,6 +1,6 @@
 {
   "name": "@nib/select",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "browser",
     "select"
@@ -8,11 +8,11 @@
   "description": "A <select> written in pure HTML/JS so it can be styled nicely - unlike native ones.",
   "main": "index.js",
   "dependencies": {
-    "@nib/menu": "^1.0.2",
+    "@nib/menu": "^1.0.3",
     "digitaledgeit-view": "^0.1.10"
   },
   "devDependencies": {
-    "@nib-styles/select": "^0.1.2"
+    "@nib-styles/select": "^1.0.0"
   },
   "browser": {
     "menu": "@nib/menu",
