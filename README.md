@@ -6,11 +6,11 @@ A `<select>` input written in pure HTML/JS so it can be styled nicely unlike the
 
 Component:
 
-    component install nib-components/select
+    component install nib-health-funds/select
     
 Browserify:
 
-    npm install --save @nib-components/select
+    npm install --save @nib-health-funds/select
     
 ## Usage
 
