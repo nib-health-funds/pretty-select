@@ -72,6 +72,7 @@ module.exports = View.extend({
       this.selected = item;
       this.input.innerHTML = item.label;
       this.el.setAttribute('data-value', item.value);
+      this.emit('selected', item.value);
     }
 
     return this;

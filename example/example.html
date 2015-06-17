@@ -26,12 +26,6 @@
         </div>
     </div>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
     <div>
         <h4>Native select</h4>
         <select>
@@ -43,13 +37,50 @@
         </select>
     </div>
 
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
 <script src="../build/build.js"></script>
 <script>
 
     var Select = require('select');
-    var select = new Select({el: document.querySelector('.js-select')});
+    var select = new Select({
+        el: document.querySelector('.js-select')});
 
-
+    select.on('selected', function(value) {
+        console.log('Emitted!'+ value);
+    });
 
 </script>
 
