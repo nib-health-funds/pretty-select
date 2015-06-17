@@ -1,5 +1,6 @@
 {
   "name": "select",
+  "scripts": ["index.js"],
   "dependencies": {
     "nib-health-funds/menu": "^1.0.3",
     "digitaledgeit/js-view": "^0.1.10"
