@@ -35,9 +35,12 @@ module.exports = View.extend({
       .on('select-item',  this.onMenuItemSelected.bind(this))
     ;
 
-    //initialise the input and menu to the first item in the list (if there are items)
-    this.select(0);
-    this.menu.focus(0);
+    //initialise the input and menu to the selected item or the first item
+    var selectedItem = this.input.getAttribute("data-value");
+    if(selectedItem)
+      this.select(selectedItem);
+    else
+      this.select(0);
 
   },
 
@@ -73,6 +76,7 @@ module.exports = View.extend({
       this.input.innerHTML = item.label;
       this.el.setAttribute('data-value', item.value);
       this.emit('selected', item.value);
+      this.menu.focus(value);
     }
 
     return this;
