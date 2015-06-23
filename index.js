@@ -106,10 +106,12 @@ module.exports = View.extend({
   },
 
   onMenuOpened: function() {
+    this.emit('opened');
     this.el.classList.add('is-open');
   },
 
   onMenuClosed: function() {
+    this.emit('closed');
     this.el.classList.remove('is-open');
   },
 

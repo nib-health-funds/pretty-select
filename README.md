@@ -43,3 +43,14 @@ Create a new select from an existing HTML element.
 #### .focus()
 
 Focus the select.
+
+
+### Events
+
+#### <>opened
+
+Emitted when the select menu has finished opening.
+
+#### <>closed
+
+Emitted when the select menu has finished closing.
