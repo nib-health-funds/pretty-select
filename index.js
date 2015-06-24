@@ -36,7 +36,7 @@ module.exports = View.extend({
     ;
 
     //initialise the input and menu to the selected item or the first item
-    var selectedItem = this.input.getAttribute("data-value");
+    var selectedItem = this.el.getAttribute('data-value');
     if(selectedItem)
       this.select(selectedItem);
     else

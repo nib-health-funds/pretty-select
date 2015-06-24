@@ -1,6 +1,6 @@
 {
   "name": "@nib/select",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "keywords": [
     "browser",
     "select"
@@ -12,7 +12,10 @@
     "digitaledgeit-view": "^0.1.10"
   },
   "devDependencies": {
-    "@nib-styles/select": "^1.0.0"
+    "@nib-styles/select": "^1.0.0",
+    "consolify": "^2.0.0",
+    "mocaccino": "^1.5.1",
+    "mocha": "^2.2.5"
   },
   "browser": {
     "menu": "@nib/menu",
@@ -20,7 +23,8 @@
   },
   "scripts": {
     "build": "browserify -r ./index.js:select -o build/build.js",
-    "test": "mochify"
+    "test": "mochify",
+    "test-interactive": "browserify --debug --plugin mocaccino --plugin consolify ./test/index.js -o build/test.html"
   },
   "repository": {
     "type": "git",
